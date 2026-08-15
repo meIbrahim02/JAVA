@@ -8,7 +8,7 @@ public static void main(String[] args) {
         double radius;
         double circumference;
         double area;
-        double volume;
+        // double volume;
 
         System.out.print("Enter the radius: ");
         radius = scan.nextDouble();
