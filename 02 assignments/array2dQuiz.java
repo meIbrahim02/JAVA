@@ -38,13 +38,17 @@ public class array2dQuiz {
             System.out.print("Enter your guess (1-4): ");
             guess = scanner.nextInt(); // get user input 
 
-            
+            if(guess == answers[i]){
+                System.out.println("Correct!");
+                score++; // increment score
+            } else {
+                System.out.println("Incorrect! The correct answer was: " + answers[i]);
+            }
         }
 
-
-        // get guess from user
-        // check our guess if correct, increment score
         // display final score
+        System.out.println();
+        System.out.println("Quiz Over! Your final score is: " + score + "/" + questions.length);
 
         scanner.close();
         
